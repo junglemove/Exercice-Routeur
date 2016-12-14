@@ -1,0 +1,9 @@
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+    router.dispatch(req, res);
+});
+
+server.listen(8080, () => {
+    console.log("Le serveur écoute sur le port 8080");
+});
